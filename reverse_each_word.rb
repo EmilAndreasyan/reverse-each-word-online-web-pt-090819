@@ -11,10 +11,11 @@ return_array << word.reverse
   
   
   def reverse_each_word(arr)
+    return_array = []
     string = arr.split(" ")
     string.collect do |word|
-      word.reverse
+    return_array << word.reverse
   end
-  string.join(" ")
+  return_array.join(" ")
 end
 reverse_each_word(arr)
